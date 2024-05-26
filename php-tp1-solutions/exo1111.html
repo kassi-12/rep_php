@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>TP 1 - Exo 1</title>
+		<link rel="stylesheet" href="css/tp1.css">
+	</head>
+	<body>
+		<h1>TP 1 - Exo 1</h1>
+		<hr>
+<?php
+	$temps = date("H:i:sa");
+    //$temps = date("\\I\\l \\e\\s\\t h \\h\\e\\u\\r\\e(\\s), i \\m\\i\\n\\u\\t\\e(\\s), \\e\\t s") .' seconde(s)'; 
+ 
+//setlocale(LC_TIME, 'fr_FR');
+// Prints the day, date, month, year, time, AM or PM
+ 
+//$temps = strftime('%A %d %B %Y, %H:%M');
+ 
+
+?>
+		<h2>
+			Il est maintenant <?php echo $temps; ?> 
+		</h2>
+	</body>
+</html>

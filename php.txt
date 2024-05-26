@@ -1,0 +1,45 @@
+HTML content
+< ?php
+PHP code
+?>
+----------------
+print "text" ;
+echo "text" ;
+----------------
+$user_name = "Peacetachful" ;
+$age = 33 ;
+$age_in_dog_years = $age / 7 ;
+$this_class_rocks = TRUE ;
+----------------
+$name = "Emsi - 3iir"
+$length = strlen($name) ; # 11
+$cmp = strcmp($name, "Emsi") ; # > 0
+$index = strpos($name, "i") ; # 3
+$last = substr($name, 8, 4) ; # "3iir"
+$name = strtoupper($name) ;
+----------------
+for ($i = 0 ; $i < 10 ; $i++) {
+print "$i squared is " . $i * $i . " <br>" ;
+}
+----------------
+$name = array() ;
+$name = array(value
+$name[index]
+$name[index] = valu
+$name[] = value ;
+----------------
+$tas = array("CA", "MJ", "MG", "SK", "KC") ;
+for ($i = 0 ; $i < count($tas) ; $i++) {
+$tas[$i] = strtolower($tas[$i]) ;
+} 
+$conner = array_shift($tas) ; 
+array_pop($tas) ; 
+array_push($tas, "kt") ; 
+array_reverse($tas) ; 
+sort($tas) ; 
+$ks = array_slice($tas, 1, 2) ;
+----------------
+$stooges = array ("Larray", "Moe", "Curly", "Shemp") ;
+foreach ($stooges as $stooge) {
+print "Moe slaps $stooge\n" ; # Even himself
+}

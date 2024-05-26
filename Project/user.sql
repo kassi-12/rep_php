@@ -1,0 +1,56 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1:3306
+-- Généré le : dim. 31 déc. 2023 à 04:28
+-- Version du serveur : 8.0.31
+-- Version de PHP : 8.0.26
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données : `tp`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `NOM` varchar(30) NOT NULL,
+  `PRENOM` varchar(30) NOT NULL,
+  `EMAIL` varchar(30) NOT NULL,
+  `PASSWORD` varchar(40) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `ROLE` varchar(20) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`ID`, `NOM`, `PRENOM`, `EMAIL`, `PASSWORD`, `ROLE`) VALUES
+(1, 'KASSIMI', 'ABDERRAHMANE', 'ABDORAHMANKASSIMI12@GMAIL.COM', 'e10adc3949ba59abbe56e057f20f883e', 'ADMIN'),
+(2, 'SABI', 'HOUSSAM', 'HOASSAM.SABI@GMAIL.COM', 'e10adc3949ba59abbe56e057f20f883e', 'ADMIN'),
+(3, 'MAAICHI', 'MOHAMED-AMINE', 'AMINIE.EMA@GMAIL.COM', 'e10adc3949ba59abbe56e057f20f883e', 'USER'),
+(4, 'HANINOU', 'MOUAD', 'MOUAD.HANINOU@GMAIL.COM', 'e10adc3949ba59abbe56e057f20f883e', 'USER'),
+(9, 'SAAD', 'KOUBACHI', 'K.SAAD@GMAIL.COM', 'e10adc3949ba59abbe56e057f20f883e', 'USER'),
+(11, 'TEST', 'TEST', 'TEST.TEST@GMAIL.COM', 'e10adc3949ba59abbe56e057f20f883e', 'ADMIN');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
